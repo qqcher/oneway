@@ -33,3 +33,6 @@ oneway<-function(x){
   class(result) <- "oneway"
   return(result)
 }
+
+library(pkgdown)
+build_site()
