@@ -16,10 +16,10 @@ print.oneway <- function(x, ...){
     stop("Must be class 'oneway")
   }
 
-  cat("Summary statistics\n",
+  cat("\n\033[31m\033[1m\033[4mSummary Statistics\033[24m\033[22m\033[39m\n",
       "====================\n")
   print(x$summarystats, ...)
-  cat("\nAnova\n",
+  cat("\n\033[31m\033[1m\033[4mAnova\033[24m\033[22m\033[39m\n",
       "====================\n")
   print(summary.lm(x$anova))
 }

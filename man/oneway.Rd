@@ -4,13 +4,13 @@
 \alias{oneway}
 \title{One Way Analysis of Variance}
 \usage{
-oneway(x)
+oneway(formula, data)
 }
 \arguments{
+\item{data}{a data frame contain the variables in the model.}
+
 \item{x}{forumula an object of class formula, relating the dependent
 variable to the grouping variable}
-
-\item{data}{a data frame contain the variables in the model.}
 }
 \value{
 a list with 2 elements:
